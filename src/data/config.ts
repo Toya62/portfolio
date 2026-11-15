@@ -3,7 +3,7 @@ export const CONFIG = {
   // Site Settings
   // ---------------------------------------------------------------------------
   site: {
-    url: "https://toya62.github.io",
+    url: "https://toyanathpandey.com.np",
     locale: "en_US",
     twitterHandle: "",
   },

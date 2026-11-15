@@ -15,7 +15,7 @@ type Hackathon = {
 export const DATA = {
   name: "Toyanath Pandey",
   initials: "TP",
-  url: "https://toya62.github.io",
+  url: "https://toyanathpandey.com.np",
   location: "Germany",
   locationLink: "https://www.google.com/maps/place/Germany",
   description: "Software engineer focused on Python backend development, research data pipelines, and systems integration.",

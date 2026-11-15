@@ -2,9 +2,9 @@
 
 This local portfolio is based on Starfolio. Edit profile content in
 `src/data/resume.tsx` and replace `public/portrait.jpg` to update the photo.
-The site is configured for GitHub Pages at `https://toya62.github.io`.
-To use a custom domain later, update the site URLs in `src/data/config.ts` and
-`src/data/resume.tsx` after configuring the domain in GitHub Pages and DNS.
+The site is configured for GitHub Pages at `https://toyanathpandey.com.np`.
+If the custom domain changes, update the site URLs in `src/data/config.ts` and
+`src/data/resume.tsx` along with the GitHub Pages and DNS settings.
 
 Run `pnpm exec astro dev` for a local preview, `pnpm exec astro build` to build,
 and `pnpm exec astro check` to check types. GitHub Actions builds and deploys

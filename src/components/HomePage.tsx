@@ -83,6 +83,21 @@ const sectionComponents: Record<string, React.ReactNode> = {
       </div>
     </section>
   ),
+  certifications: (
+    <section id="certifications">
+      <div className="flex min-h-0 flex-col gap-y-4">
+        <h2 className="text-xl font-bold">{DATA.sections.certifications.heading}</h2>
+        <ul className="grid gap-3 sm:grid-cols-2">
+          {DATA.certifications.map((certification) => (
+            <li key={certification.name} className="rounded-xl border border-border p-4">
+              <h3 className="text-sm font-semibold">{certification.name}</h3>
+              <p className="mt-1 text-xs text-muted-foreground">{certification.detail}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ),
   skills: (
     <section id="skills">
       <div className="flex min-h-0 flex-col gap-y-4">
@@ -138,12 +153,7 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
-              />
+              <h1 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl">{DATA.name}</h1>
               <BlurFadeText
                 className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
                 delay={BLUR_FADE_DELAY}
@@ -152,7 +162,7 @@ export default function HomePage() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage alt={`Portrait of ${DATA.name}`} src={DATA.avatarUrl} className="object-cover object-center" />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>

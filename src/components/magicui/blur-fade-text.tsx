@@ -43,7 +43,7 @@ const BlurFadeText = ({
           return (
             <motion.span
               key={i}
-              initial="hidden"
+              initial={false}
               animate="visible"
               variants={charVariants}
               transition={{
@@ -65,7 +65,7 @@ const BlurFadeText = ({
   return (
     <div className="flex">
       <motion.span
-        initial="hidden"
+        initial={false}
         animate="visible"
         variants={combinedVariants}
         transition={{

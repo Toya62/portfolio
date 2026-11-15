@@ -57,7 +57,7 @@ export function ProjectCard({
         className
       )}
     >
-      <div className="relative shrink-0">
+      {(image || video) && <div className="relative shrink-0">
         <a
           href={href || "#"}
           target="_blank"
@@ -100,7 +100,7 @@ export function ProjectCard({
             ))}
           </div>
         )}
-      </div>
+      </div>}
       <div className="p-6 flex flex-col gap-3 flex-1">
         <div className="flex items-start justify-between gap-2">
           <div className="flex flex-col gap-1">
@@ -120,6 +120,15 @@ export function ProjectCard({
         <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
           <Markdown>{description}</Markdown>
         </div>
+        {links && links.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {links.map((link) => (
+              <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs font-medium underline underline-offset-4">
+                {link.icon} {link.type}<span className="sr-only"> for {title}</span>
+              </a>
+            ))}
+          </div>
+        )}
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-auto">
             {tags.map((tag) => (

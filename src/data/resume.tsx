@@ -111,6 +111,18 @@ export const DATA = {
       links: [{ type: "Source", href: "https://github.com/Toya62/EnsOrthoPOST", icon: <Icons.github className="size-3" /> }], image: "", video: "",
     },
     {
+      title: "Air quality data pipeline", href: "https://github.com/Toya62/data-streaming-pipeline", dates: "Streaming data engineering", active: true,
+      description: "A pipeline that fetches OpenAQ measurements and processes them with Kafka and Flink, including air quality index calculations.",
+      technologies: ["Python", "Kafka", "Apache Flink", "OpenAQ"],
+      links: [{ type: "Source", href: "https://github.com/Toya62/data-streaming-pipeline", icon: <Icons.github className="size-3" /> }], image: "", video: "",
+    },
+    {
+      title: "Codex Magna", href: "https://github.com/Toya62/codex-magna", dates: "Backend architecture · early-stage", active: true,
+      description: "An early-stage modular NestJS backend with a page-creation API, PostgreSQL JSONB storage, validation and event-driven communication.",
+      technologies: ["TypeScript", "NestJS", "PostgreSQL", "TypeORM"],
+      links: [{ type: "Source", href: "https://github.com/Toya62/codex-magna", icon: <Icons.github className="size-3" /> }], image: "", video: "",
+    },
+    {
       title: "Weather stream pipeline", href: "https://github.com/Toya62/pyflink-weather-stream-pipeline", dates: "Stream processing", active: true,
       description: "Processes weather telemetry with stateful tracking and incremental tumbling-window statistics using the PyFlink DataStream API.",
       technologies: ["Python", "PyFlink", "Streaming"],
@@ -139,6 +151,12 @@ export const DATA = {
       description: "A local learning lab using Helm, Kubernetes Jobs and LocalStack, with an observability stack and synthetic telemetry.",
       technologies: ["Kubernetes", "Helm", "Observability"],
       links: [{ type: "Source", href: "https://github.com/Toya62/k8s-platform-lab", icon: <Icons.github className="size-3" /> }], image: "", video: "",
+    },
+    {
+      title: "Ensembl sequence fetcher", href: "https://github.com/Toya62/ensembl-brca1-sequence-fetcher", dates: "Research data utility", active: true,
+      description: "A Python utility that retrieves gene metadata and genomic, transcript and protein sequences from the Ensembl REST API.",
+      technologies: ["Python", "Ensembl REST API", "FASTA"],
+      links: [{ type: "Source", href: "https://github.com/Toya62/ensembl-brca1-sequence-fetcher", icon: <Icons.github className="size-3" /> }], image: "", video: "",
     },
   ],
   hackathons: [] as Hackathon[],

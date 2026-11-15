@@ -50,8 +50,10 @@ export default function ProjectsSection() {
                         </BlurFade>
                     ))}
                 </div>
+                <a className="self-center text-sm font-medium underline underline-offset-4" href={DATA.contact.social.GitHub.url}>
+                    View all repositories on GitHub ↗
+                </a>
             </div>
         </section>
     );
 }
-

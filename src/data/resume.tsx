@@ -45,9 +45,12 @@ export const DATA = {
     { name: "Python", icon: Python }, { name: "C++" }, { name: "SQL" },
     { name: "FastAPI" }, { name: "Flask" }, { name: "REST & GraphQL" },
     { name: "Apache Flink" }, { name: "PyFlink" }, { name: "Kafka" },
+    { name: "Hybrid RAG & Vector Retrieval" },
+    { name: "LLM APIs (Gemini, OpenAI)" },
     { name: "PostgreSQL", icon: Postgresql }, { name: "Docker", icon: Docker },
     { name: "Kubernetes", icon: Kubernetes }, { name: "Linux" },
     { name: "AWS" }, { name: "Terraform" }, { name: "CI/CD" },
+    { name: "CMake" },
   ] as Skill[],
   navbar: [{ href: "/", icon: House, label: "Home" }],
   contact: {
@@ -62,7 +65,7 @@ export const DATA = {
     {
       company: "Hochschule Koblenz", title: "Research Assistant · Backend & APIs",
       href: "https://www.hs-koblenz.de/", badges: [], location: "Remagen, Germany", logoUrl: "",
-      start: "Oct 2025", end: "Oct 2026",
+      start: "Oct 2025", end: "Sep 2026",
       description: "Developed Python services to retrieve research data from REST and GraphQL interfaces, including Ensembl and NCBI. Built data validation and transformation pipelines using Nextflow and Docker and integrated automated tests with GitLab CI.",
     },
     {
@@ -95,7 +98,6 @@ export const DATA = {
     { school: "Lovely Professional University", href: "https://www.lpu.in/", degree: "B.Tech Computer Science and Engineering", logoUrl: "", start: "2017", end: "2021" },
   ],
   certifications: [
-    { name: "AWS Certified Security – Specialty", detail: "Active" },
     { name: "Certified Ethical Hacker (CEH)", detail: "Expired in 2023" },
     { name: "Cybersecurity IT Fundamentals Specialist", detail: "Listed on LinkedIn" },
     { name: "Cyber@ANZ Program", detail: "Listed on LinkedIn" },
@@ -104,6 +106,28 @@ export const DATA = {
     { name: "Data science", detail: "Listed on LinkedIn" },
   ],
   projects: [
+    {
+      title: "Karriere Pipeline",
+      href: "https://github.com/Toya62/karriere-pipeline",
+      dates: "Automated job platform & ATS copilot",
+      active: true,
+      description: "Local-first automated job discovery & CRM intelligence platform with multi-source scrapers, SQLite WAL persistence, Gemini API matching, Playwright auto-fill, and Tectonic/LaTeX automated compilation.",
+      technologies: ["Python", "FastAPI", "SQLite", "Gemini API", "Playwright", "Docker"],
+      links: [{ type: "Source", href: "https://github.com/Toya62/karriere-pipeline", icon: <Icons.github className="size-3" /> }],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Nakshatra",
+      href: "https://github.com/Toya62/nakshatra",
+      dates: "Astrophysical engine & hybrid RAG",
+      active: true,
+      description: "High-precision astronomical and Vedic computation engine with hybrid RAG (BM25 + dense sentence embeddings via Reciprocal Rank Fusion), multi-provider LLM synthesis (Gemini/OpenAI), and Swiss Ephemeris C-engine.",
+      technologies: ["Python", "Swiss Ephemeris", "FastAPI", "Hybrid RAG", "Gemini API", "OpenAI"],
+      links: [{ type: "Source", href: "https://github.com/Toya62/nakshatra", icon: <Icons.github className="size-3" /> }],
+      image: "",
+      video: "",
+    },
     {
       title: "EnsOrthoPOST", href: "https://github.com/Toya62/EnsOrthoPOST", dates: "Research data pipeline", active: true,
       description: "Builds multi-species gene-training datasets from HGNC and Ensembl data, producing sequence and annotation files.",
